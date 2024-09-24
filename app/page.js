@@ -1,11 +1,20 @@
+"use client";
 import React from "react";
-import Header from "./Components/Header"
+import Hero from "./Components/Hero";
+import Projects from "./Projects/page";
+import Skills from "./Skills/page";
+import Contact from "./Contact/page";
+
 
 function App() {
   return (
-    <div className="relative w-full h-screen bg-zinc-800">
-      <h1 className="text-center text-white text-3xl font-bold p-5">X and Zero</h1>
-      <Header />
+    <div>
+      <div className="relative text-white">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
     </div>
   );
 }
